@@ -1,20 +1,30 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# sunoreverse
 
-# Run and deploy your AI Studio app
+> Give it a song. Get the Suno prompt that would recreate it.
 
-This contains everything you need to run your app locally.
+A Gemini-powered tool that reverse-engineers any music file or URL into a structured Suno AI style prompt. Upload an audio file or paste a link, and get back genre, vocal style, instruments, production style, mood, and tempo — ready to paste into Suno.
 
-View your app in AI Studio: https://ai.studio/apps/de3db29d-ec41-47b2-aa00-a60fc452e964
+## Features
 
-## Run Locally
+- 🎧 Two input modes: file upload or URL
+- 🔍 Extracts genre, vocal style, instruments, production, mood, tempo
+- 📄 Exportable Markdown output
+- ⚡ Powered by Gemini API (multimodal audio analysis)
 
-**Prerequisites:**  Node.js
+## Stack
 
+React · TypeScript · Vite · Gemini API
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+## Run locally
+
+**Prerequisites:** Node.js, a Gemini API key
+
+```bash
+npm install
+cp .env.local.example .env.local  # add your GEMINI_API_KEY
+npm run dev
+```
+
+## Live demo
+
+[Open in AI Studio](https://ai.studio/apps/de3db29d-ec41-47b2-aa00-a60fc452e964)
